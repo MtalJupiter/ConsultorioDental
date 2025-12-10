@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Consultorio Dental - Página Principal</title>
+  <title>Consultorio Dental Xiawi</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
       <div class="header-inner">
         <div class="logo"><img src="gato.png" alt="logo" width=60 height=60/></div>
         <div>
-          <h1>Clínica xawii</h1>
+          <h1>Clínica xiawi</h1>
           <div class="tag">Consultorio dental — Atención segura y profesional</div>
         </div>
       </div>
@@ -22,7 +22,7 @@
       <section class="hero">
         <div class="intro">
           <h2>CONOCENOS</h2>
-          <p>En Clínica xawii ofrecemos atención dental integral con un equipo de especialistas en ortodoncia, endodoncia, cirugía maxilofacial, periodoncia y odontopediatría. Nuestro objetivo es proporcionar tratamientos eficaces en un entorno cómodo y seguro.</p>
+          <p>En Clínica xiawi ofrecemos atención dental integral con un equipo de especialistas en ortodoncia, endodoncia, cirugía maxilofacial, periodoncia y odontopediatría. Nuestro objetivo es proporcionar tratamientos eficaces en un entorno cómodo y seguro.</p>
         </div>
         <aside class="aside">
           <div class="contact">
@@ -37,7 +37,7 @@
             </div>
             <div class="contact-item">
               <strong>Email</strong>
-              <a href="mailto:correo@clinica-sonrisa.example" class="contact-link">✉️ clinica-xawii@gmail.com</a>
+              <a href="mailto:correo@clinica-sonrisa.example" class="contact-link">✉️ clinica-xiawi@gmail.com</a>
             </div>
             <div class="contact-item">
               <strong>Horario</strong>
@@ -94,6 +94,30 @@
         </div>
     </section>
 
+    <section id="citas">
+        <h2>Solicitar Cita</h2>
+        <form id="cita" method="post">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required>
+
+            <label for="especialidad">Especialidad requerida:</label>
+            <select id="especialidad" required>
+                <option value="">Selecciona una opción...</option>
+                <option value="Ortodoncia">Ortodoncia</option>
+                <option value="Endodoncia">Endodoncia</option>
+                <option value="Cirugia">Cirugia Maxilofacial</option>
+                <option value="Periodoncia">Periodoncia</option>
+                <option value="Odontopediatria">Odontopediatria</option>
+            </select>
+
+            <button type="submit" name="enviar" value="Enviar">Enviar Solicitud</button>
+            <p id="mensaje"></p>
+        </form>
+    </section>
+    <script src="main.js"></script>
 
     <!-- FOOTER PROFESIONAL -->
     <footer>
