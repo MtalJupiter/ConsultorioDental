@@ -1,4 +1,4 @@
-body {
+      body {
     background: linear-gradient(135deg,#0f172a,#1e293b);
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -331,3 +331,145 @@ a:hover {
     background-color: #fff;
     color: #f52c2c;
 }
+
+/* SECCION DE SERVICIOS */
+
+/* NAVBAR */
+        nav {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav h2 {
+            margin: 0;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 400;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 38px;
+            color: #f8fafc;
+        }
+
+        .subtitulo {
+            text-align: center;
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+
+        /* CONTENEDOR */
+        .servicios-container {
+            width: 90%;
+            max-width: 1150px;
+            margin: 0 auto 60px;
+            display: grid;
+            gap: 25px;
+        }
+
+        /* TARJETAS */
+        .servicio-card {
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 18px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+
+            /* Animación de entrada */
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 0.7s ease forwards;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        /* Delays automáticos */
+        .servicio-card:nth-child(1) { animation-delay: .1s; }
+        .servicio-card:nth-child(2) { animation-delay: .2s; }
+        .servicio-card:nth-child(3) { animation-delay: .3s; }
+        .servicio-card:nth-child(4) { animation-delay: .4s; }
+        .servicio-card:nth-child(5) { animation-delay: .5s; }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* EFECTO HOVER MEJORADO */
+        .servicio-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 12px 30px rgba(255,255,255,0.12);
+        }
+
+        /* EFECTO CLICK */
+        .servicio-card:active {
+            transform: scale(0.97);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        /* IMÁGENES */
+        .servicio-card img {
+            width: 170px;
+            height: 140px;
+            border-radius: 12px;
+            object-fit: cover;
+            filter: brightness(0.92);
+            transition: transform 0.4s;
+        }
+
+        .servicio-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .text-area {
+            flex: 1;
+        }
+
+        .text-area h3 {
+            margin: 0 0 8px;
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            color: #f1f5f9;
+        }
+
+        .icon {
+            width: 26px;
+            margin-right: 10px;
+            opacity: 0.8;
+        }
+
+        .text-area p {
+            margin: 0;
+            font-size: 15px;
+            color: #d1d5db;
+            line-height: 1.5;
+        }
