@@ -263,6 +263,45 @@ main {
     text-decoration: underline;
 }
 
+/*Estilos del formulario*/
+        #citas{
+            background:  #1e293b;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(133, 126, 126, 0.1);
+            border-color: #f8f3f3;
+        }
+        #cita label, #cita input,  #cita select,  #cita button{
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        #cita input,  #cita select{
+            padding: 12px;
+            border: 1px solid #CCC;
+            border-radius: 10px;
+        }
+         #cita button:hover{
+            background-color: #4b83cc;
+            color: white;
+         }
+         #cita label{
+             color:  #e5e7eb;
+         }
+         h2{
+            font-style: oblique;
+            font-size: 30px;
+            color:  #ffffff;
+         }
+         #cita button{
+            border-radius: 10px;
+            height: 50px;
+            width: 150px;
+         }
+
 footer {
     margin-top: 18px;
     text-align: center;
