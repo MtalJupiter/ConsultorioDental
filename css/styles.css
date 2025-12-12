@@ -113,8 +113,8 @@ header:hover {
 }
 
 .logo {
-    width: 64px;
-    height: 64px;
+    width: 84px;
+    height: 84px;
     border-radius: 8px;
     background: #fff;
     color: var(--accent);
