@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div id="inicio"></div>
    <nav>
         <h2>Consultorio Dental Xiawi</h2>
         <div>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#citas">Citas</a>
         </div>
     </nav>
+    
   <div class="wrap">
     <header>
       <div class="header-inner">
@@ -52,12 +55,13 @@
               <p id="dire">Lunes a Viernes — 09:00 a 18:00</p>
             </div>
           </div>
+          <div id="servicios"></div> <!--Se coloca aqui para que en la página nos redireccione al apartado de nuestros servicios desde el titulo, pues está muy pegado al apartado de inicio -->
         </aside>
       </section>
     </main>
 
-
-    <h1>Nuestros Servicios</h1>
+    
+    <h1 id="servicios">Nuestros Servicios</h1>
     <p class="subtitulo">Especialidades profesionales para tu salud bucal</p>
 
     <div class="servicios-container">
@@ -105,7 +109,7 @@
     </div>
 
     
-        <div class="team">
+        <div class="team" id="equipo">
         <h1 style="text-align:center; margin-top:70px;">Especialistas</h1>
     </div>
     <div class="team">
